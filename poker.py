@@ -91,6 +91,11 @@ class hand():
 		# print(tableHands[1, 1])
 		# return tableHands
 
+	def adjust_numbers(self):
+		self.all_cards = self.cards + cards
+		for i in range(len(self.all_cards)):
+			self.numbercounts[self.all_cards[i]] = self.numbercounts[self.all_cards[i]] + 1
+
 	def analyze_board(self, cards):
 		self.all_cards = self.cards + cards
 
